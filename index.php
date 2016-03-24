@@ -31,7 +31,7 @@
     $user = "b2829da0080961";
     $pwd = "926e92e0";
     $db = "Test";
-    $connection = "Database=acsm_2fd6830ca4dfb48;Data Source=us-cdbr-azure-east-a.cloudapp.net;User Id=b2829da0080961;Password=926e92e0"
+    $connection = "Database=acsm_2fd6830ca4dfb48;Data Source=us-cdbr-azure-east-a.cloudapp.net;User Id=b2829da0080961;Password=926e92e0";
     // Connect to database.
     try {
         $conn = new PDO( "mysql:host=$host;dbname=$db", $user, $pwd);
