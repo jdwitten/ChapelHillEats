@@ -74,6 +74,7 @@
             echo "<td>".$registrant['email']."</td>";
             echo "<td>".$registrant['date']."</td></tr>";
         }
+        
         echo "</table>";
     } else {
         echo "<h3>No one is currently registered.</h3>";
