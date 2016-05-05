@@ -3,7 +3,7 @@
 <link rel="stylesheet" type="text/css" href="mystyle.css">
 </head>
 <body>    
-<div id = "Topper">Chapel Hill Eats</div>
+<div id = "Topper"><p>Chapel Hill Eats</p></div>
 <?php
 
 $host = "us-cdbr-azure-east-a.cloudapp.net";
