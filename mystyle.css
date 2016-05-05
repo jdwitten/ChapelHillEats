@@ -1,9 +1,10 @@
 #Topper{
+  margin:0px;
   background : url("http://farm5.static.flickr.com/4119/4900978861_181ea90c0a.jpg");
   width : 100%;
   height : 400px;
   background-size:contain;
-  
+  font-family:Verdana;
   font-size:30px;
   color:white;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
