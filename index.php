@@ -16,10 +16,10 @@ $sql = "select * from acsm_2fd6830ca4dfb48.restaraunts";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
-    echo "<table><tr><th>ID</th><th>Name</th></tr>";
+    echo "<table><tr><th>Name</th><th>Phone Number</th></tr>";
     // output data of each row
     while($row = $result->fetch_assoc()) {
-        echo "<tr><td>".$row["id"]."</td><td>".$row["firstname"]." ".$row["lastname"]."</td></tr>";
+        echo "<tr><td>".$row["rname"]."</td><td>".$row["phone"]."</tr>";
     }
     echo "</table>";
 } else {
