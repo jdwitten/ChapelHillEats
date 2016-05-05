@@ -5,19 +5,20 @@
   background-size:contain;
   position:relative;
   margin:0;
-  p{
-    font-family:Verdana;
-    font-size:30px;
-    color:white;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%)
-  }
   
 }
+#Topper > p{
+  font-family:Verdana;
+  font-size:30px;
+  color:white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+  }
+  
 
 body{
   background-color: gray;
