@@ -1,3 +1,9 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+<body>    
+<div id = "Topper">Chapel Hill Eats</div>
 <?php
 
 $host = "us-cdbr-azure-east-a.cloudapp.net";
@@ -27,5 +33,5 @@ if ($result->num_rows > 0) {
 }
 $conn->close();
 ?>
-
-
+</body>
+</html>
