@@ -1,5 +1,5 @@
 #Topper{
-  background-image = "https://upload.wikimedia.org/wikipedia/commons/a/ac/Franklin_street_chapel_hill.JPG";
+  background = url("https://upload.wikimedia.org/wikipedia/commons/a/ac/Franklin_street_chapel_hill.JPG");
   width = 100%;
   hieght = 400px;
 }
