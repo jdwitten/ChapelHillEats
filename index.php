@@ -1,6 +1,31 @@
 <?php
 
-phpinfo();
+$servername = "br-cdbr-azure-south-a.cloudapp.net";
+$username = "bab3c8236748da";
+$password = "2674ede4";
+$dbname = "acsm_2fd6830ca4dfb48";
 
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+$sql = "select * from acsm_2fd6830ca4dfb48.restaraunts";
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
+    echo "<table><tr><th>ID</th><th>Name</th></tr>";
+    // output data of each row
+    while($row = $result->fetch_assoc()) {
+        echo "<tr><td>".$row["id"]."</td><td>".$row["firstname"]." ".$row["lastname"]."</td></tr>";
+    }
+    echo "</table>";
+} else {
+    echo "0 results";
+}
+$conn->close();
 ?>
+
 
