@@ -1,12 +1,12 @@
 <?php
 
-$servername = "br-cdbr-azure-south-a.cloudapp.net";
-$username = "bab3c8236748da";
-$password = "2674ede4";
-$dbname = "acsm_2fd6830ca4dfb48";
+$host = "us-cdbr-azure-east-a.cloudapp.net";
+$user = "b2829da0080961";
+$pwd = "926e92e0";
+$db = "acsm_2fd6830ca4dfb48";
 
 // Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
+$conn = new mysqli($host, $user, $pwd, $db);
 // Check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
