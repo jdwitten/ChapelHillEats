@@ -31,9 +31,12 @@ body{
  
   background-size: cover;
 }
-img{
+
+#Background{
   -webkit-filter: blur(5px);
   filter: blur(5px);
+  margin:0px;
+  padding = 0px;
 }
 select {
     border:0;
