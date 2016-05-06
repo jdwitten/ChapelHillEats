@@ -4,7 +4,6 @@
 </head>
 <body>
     
-<div id = "Topper"><p>Chapel Hill Eats</p></div>
 
 <form action="query.php" method="post">
     <select name="Type" class = "dropdown">
