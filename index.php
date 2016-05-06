@@ -2,8 +2,20 @@
 <head>
 <link rel="stylesheet" type="text/css" href="mystyle.css">
 </head>
-<body>    
+<body>
+    
 <div id = "Topper"><p>Chapel Hill Eats</p></div>
+
+<form action="query.php" method="post">
+    <select name="Type">
+        <option value="asian">Asian</option>
+        <option value="bars">Bars</option>
+        <option value="american">American</option>
+        <option value="southern">Southern</option>
+    </select>
+<input type="submit">
+</form>
+ 
 <?php
 
 $host = "us-cdbr-azure-east-a.cloudapp.net";
