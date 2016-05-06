@@ -7,7 +7,7 @@
 <div id = "Topper"><p>Chapel Hill Eats</p></div>
 
 <form action="query.php" method="post">
-    <select name="Type">
+    <select name="Type" class = "dropdown">
         <option value="asian">Asian</option>
         <option value="bars">Bars</option>
         <option value="american">American</option>
