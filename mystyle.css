@@ -20,10 +20,13 @@
   }
 .dropdown {
     overflow:hidden;
-    width:350px;
-    margin-left:35px;
+    width:500px;
+    margin-left:auto;
     background: url("images/dropdown_arrow.png") no-repeat #fff 319px 2px;
     /* dropdown_arrow.png is a 31x28 image */
+    margin-right:auto;
+    height:20px;
+    
 }
 
 
