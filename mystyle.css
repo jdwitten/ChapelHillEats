@@ -51,10 +51,9 @@ select {
 body{
   background-image:url(https://theconnieblogdotcom.files.wordpress.com/2014/10/old-well.jpg);
   background-size: contain;
+  background-repeat:none;
 }
 
-form{
-  position:absolute;
-}
+
 
 
