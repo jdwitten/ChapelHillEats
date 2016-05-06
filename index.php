@@ -3,7 +3,7 @@
 <link rel="stylesheet" type="text/css" href="mystyle.css">
 </head>
 <body>
-
+<div id = "background">
 <form action="query.php" method="post">
     <select name="Type" class = "dropdown">
         <option value=1>Asian</option>
@@ -13,5 +13,6 @@
     </select>
 <input type="submit">
 </form>
+</div>
 </body>
 </html>
