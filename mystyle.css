@@ -28,6 +28,7 @@
 
 body{
   background: url(http://cdn2.hubspot.net/hub/299588/file-442773704-jpg/UNC_Chapel_Hill/chapelhill1.jpg);
+  background-size: cover;
 }
 select {
     border:0;
