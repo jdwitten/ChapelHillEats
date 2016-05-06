@@ -8,10 +8,10 @@
 
 <form action="query.php" method="post">
     <select name="Type" class = "dropdown">
-        <option value="asian">Asian</option>
-        <option value="bars">Bars</option>
-        <option value="american">American</option>
-        <option value="southern">Southern</option>
+        <option value=1>Asian</option>
+        <option value=2>Bars</option>
+        <option value=3>American</option>
+        <option value=4>Southern</option>
     </select>
 <input type="submit">
 </form>
