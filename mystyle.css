@@ -26,17 +26,15 @@
     /* dropdown_arrow.png is a 31x28 image */
 }
 
-body{
-  background: url(http://cdn2.hubspot.net/hub/299588/file-442773704-jpg/UNC_Chapel_Hill/chapelhill1.jpg);
- 
-  background-size: cover;
-}
 
 #Background{
   -webkit-filter: blur(5px);
   filter: blur(5px);
   margin:0px;
   padding = 0px;
+  background: url(http://cdn2.hubspot.net/hub/299588/file-442773704-jpg/UNC_Chapel_Hill/chapelhill1.jpg);
+ 
+  background-size: cover;
 }
 select {
     border:0;
