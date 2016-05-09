@@ -8,6 +8,7 @@
         <h2>Explore the culinary diversity of Franklin Street</h2>
     </div>
     <div id = main>
+        <h2>Search Restaurants and Bars in Chapel Hill</h2>
         <form action="query.php" method="post">
             <select name="Type" class = "dropdown">
                 <option value=1>Asian</option>
