@@ -4,7 +4,7 @@
 </head>
 <body>
     <div id = splash>
-        <h1>Chapel Hill Eats</h1>
+        <h1></h1>Chapel Hill Eats</h1>
     </div>
     <form action="query.php" method="post">
         <select name="Type" class = "dropdown">
