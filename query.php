@@ -62,7 +62,7 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "select rname from acsm_2fd6830ca4dfb48.restaraunts where rtype =".$_POST["Type"]";
+$sql = "select rname from acsm_2fd6830ca4dfb48.restaraunts where rtype =".$_POST["Type"];
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
