@@ -3,6 +3,8 @@
 <link rel="stylesheet" type="text/css" href="mystyle.css">
 </head>
 <body>
+    <div id = menu></div>
+    <img id = splash src = https://unc.spoonuniversity.com/wp-content/uploads/sites/51/2015/11/IMG_4675-1024x768.jpg></img>
     <h1>Chapel Hill Eats</h1>
     <form action="query.php" method="post">
         <select name="Type" class = "dropdown">
