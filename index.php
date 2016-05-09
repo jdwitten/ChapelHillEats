@@ -3,9 +3,9 @@
 <link rel="stylesheet" type="text/css" href="mystyle.css">
 </head>
 <body>
-    <img id = splash src = https://unc.spoonuniversity.com/wp-content/uploads/sites/51/2015/11/IMG_4675-1024x768.jpg>
+    <div id = splash>
         <h1>Chapel Hill Eats</h1>
-    </img>
+    </div>
     <form action="query.php" method="post">
         <select name="Type" class = "dropdown">
             <option value=1>Asian</option>
