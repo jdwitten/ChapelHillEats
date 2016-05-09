@@ -52,11 +52,9 @@ select {
     color: red;
 }
 
-body{
-  background-image:url(http://blog.fmrealty.com/wp-content/uploads/2014/10/FranklinStChapelHill2.jpg);
-  background-size: contain;
-  background-repeat:no-repeat;
-  width:100%;
+img{
+  padding:0px;
+  margin:0px;
 }
 form{
  position: relative;
