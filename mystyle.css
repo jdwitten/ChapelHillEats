@@ -69,4 +69,11 @@ form{
   margin-left: auto;
   margin-right: auto;
 }
-h1 { color: #ffffff; font-family: 'Raleway',sans-serif; font-size: 62px; font-weight: 800; line-height: 72px; margin: 0 0 24px; text-align: center; text-transform: uppercase; }
+h1 { 
+  color: #ffffff; font-family: 'Raleway',sans-serif; font-size: 100px; font-weight: 800; line-height: 700px; text-align: center; text-transform: uppercase;
+  
+  margin-left:auto;
+  margin-right:auto;
+  
+  
+}
