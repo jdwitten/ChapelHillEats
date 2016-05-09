@@ -18,6 +18,10 @@
   margin-right: -50%;
   transform: translate(-50%, -50%)
   }
+html, body{
+  padding:0px;
+  margin: 0px;
+}
 .dropdown {
     overflow:hidden;
     width:500px;
