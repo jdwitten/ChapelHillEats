@@ -37,7 +37,7 @@
               <option value=5>5</option>  
           </select>
           <h4>Location</h4>
-          <select name="Rating"class = "dropdown">
+          <select name="Location"class = "dropdown">
               <option value=0>Any Location</option>
               <option value=1>East Franklin Street</option>
               <option value=2>West Franklin Street</option>
@@ -61,8 +61,31 @@ $conn = new mysqli($host, $user, $pwd, $db);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
-
-$sql = "select rname from acsm_2fd6830ca4dfb48.restaraunts where rtype =".$_POST["Type"];
+if($_POST["Type"]=="Any Type"){
+    $typeEval = "1=1";
+}
+else{
+    $typeEval = "rtype =".$_POST["Type"];
+}
+if($_POST["Location"]=="Any Location"){
+    $locationEval = "1=1";
+}
+else{
+    $locationEval = "location =".$_POST["Location"];
+}
+if($_POST["Price"]=="Any Price"){
+    $priceEval = "1=1";
+}
+else{
+    $priceEval = "price =".$_POST["Price"];
+}
+if($_POST["Rating"]=="Any Rating"){
+    $ratingEval = "1=1";
+}
+else{
+    $ratingEval = "rating =".$_POST["Rating"];
+}
+$sql = "select rname from acsm_2fd6830ca4dfb48.restaraunts where rtype =".$typeEval." and ".$locationEval." and ".$priceEval. " and ". $ratingEval;
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
