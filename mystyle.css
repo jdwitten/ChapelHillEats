@@ -66,6 +66,7 @@ select {
   background-image: url('https://unc.spoonuniversity.com/wp-content/uploads/sites/51/2015/11/IMG_4675-1024x768.jpg');
   width: 1200px;
   height: 800px;
+  background-size:cover;
   
   -webkit-filter: blur(5px);
   -moz-filter: blur(5px);
