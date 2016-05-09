@@ -38,7 +38,7 @@ select {
 }
 #splash:before {
   content: "";
-  position: fixed;
+  position: relative;
   left: 0;
   right: 0;
   z-index: -1;
@@ -57,7 +57,7 @@ select {
 }
 
 #splash {
-  position: fixed;
+  position: relative;
   left: 0;
   right: 0;
   z-index: 0;
