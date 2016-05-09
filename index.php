@@ -3,10 +3,8 @@
 <link rel="stylesheet" type="text/css" href="mystyle.css">
 </head>
 <body>
-    <div container>
     <div id = splash>
         <h1>Chapel Hill Eats</h1>
-    </div>
     </div>
     <div id = main>
         <form action="query.php" method="post">
