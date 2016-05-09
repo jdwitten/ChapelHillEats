@@ -5,6 +5,7 @@
 <body>
     <div id = splash>
         <h1>Chapel Hill Eats</h1>
+        <h2>Explore the culinary diversity of Franklin Street</h2>
     </div>
     <div id = main>
         <form action="query.php" method="post">
