@@ -44,6 +44,7 @@ select {
   margin-right: auto;
   background-image:url(https://farm8.staticflickr.com/7409/26643783000_7ccc7e2384_c.jpg);
   background-size:cover;
+  height:500px;
 }
 
 form{
