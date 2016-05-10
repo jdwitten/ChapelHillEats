@@ -85,7 +85,9 @@ else{
 
 $sql = "select rname from acsm_2fd6830ca4dfb48.restaraunts where ".$typeEval . $locationEval . $priceEval . $ratingEval;
 $result = $conn->query($sql);
-
+  while($row = $result->fetch_assoc()) {
+        echo $row['phone'];
+    }
 if ($result->num_rows > 0) {
     echo "<table><tr><th>Name</th><th>Phone Number</th><th>Address</th><th>Rating</th></tr>";
     // output data of each row
