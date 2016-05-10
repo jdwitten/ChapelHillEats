@@ -62,25 +62,25 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 if(strcmp($_POST["Type"],"Any Type")){
-    $typeEval = "1=1";
+    $typeEval = "";
 }
 else{
     $typeEval = "rtype =".$_POST["Type"];
 }
 if(strcmp($_POST["Location"],"Any Location")){
-    $locationEval = "1=1";
+    $locationEval = "";
 }
 else{
     $locationEval = "location =".$_POST["Location"];
 }
 if(strcmp($_POST["Price"],"Any Price")){
-    $priceEval = "1=1";
+    $priceEval = "";
 }
 else{
     $priceEval = "price =".$_POST["Price"];
 }
 if(strcmp($_POST["Rating"],"Any Rating")){
-    $ratingEval = "1=1";
+    $ratingEval = "";
 }
 else{
     $ratingEval = "rating =".$_POST["Rating"];
