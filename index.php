@@ -4,8 +4,8 @@
 </head>
 <body>
     <div id = splash>
-        <h1>Franklin Str<span>eat</span></h1>
-        <h2>Explore the culinary diversity of Franklin Street</h2>
+        <h1>Franklin Str<span>eats</span></h1>
+        <h1>Explore the culinary diversity of Chapel Hill</h1>
     </div>
     <div id = main>
         <h3>Search Restaurants and Bars in Chapel Hill</h3>
