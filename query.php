@@ -85,7 +85,7 @@ if(strcmp($_POST["Rating"],"Any Rating")){
 else{
     $ratingEval = "and rating =".$_POST["Rating"];
 }
-echo $typeEval . $priceEval . $locationEval . $ratingEval
+echo $typeEval . $priceEval . $locationEval . $ratingEval;
 $sql = "select rname from acsm_2fd6830ca4dfb48.restaraunts where ".$typeEval . $locationEval . $priceEval . $ratingEval;
 $result = $conn->query($sql);
 
