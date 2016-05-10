@@ -65,27 +65,27 @@ if(strcmp($_POST["Type"],"Any Type")){
     $typeEval = "";
 }
 else{
-    $typeEval = "rtype =".$_POST["Type"];
+    $typeEval = " and rtype =".$_POST["Type"];
 }
 if(strcmp($_POST["Location"],"Any Location")){
     $locationEval = "";
 }
 else{
-    $locationEval = "location =".$_POST["Location"];
+    $locationEval = " and location =".$_POST["Location"];
 }
 if(strcmp($_POST["Price"],"Any Price")){
     $priceEval = "";
 }
 else{
-    $priceEval = "price =".$_POST["Price"];
+    $priceEval = "and price =".$_POST["Price"];
 }
 if(strcmp($_POST["Rating"],"Any Rating")){
     $ratingEval = "";
 }
 else{
-    $ratingEval = "rating =".$_POST["Rating"];
+    $ratingEval = "and rating =".$_POST["Rating"];
 }
-$sql = "select rname from acsm_2fd6830ca4dfb48.restaraunts where rtype =".$typeEval." and ".$locationEval." and ".$priceEval. " and ". $ratingEval;
+$sql = "select rname from acsm_2fd6830ca4dfb48.restaraunts where rtype =".$typeEval . $locationEval . $priceEval . $ratingEval;
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
