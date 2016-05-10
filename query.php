@@ -3,9 +3,9 @@
 <link rel="stylesheet" type="text/css" href="mystyle.css">
 </head>
 <body>
-    <div id = splash>
-        <h1>Chapel Hill Eats</h1>
-        <h2>Explore the culinary diversity of Franklin Street</h2>
+       <div id = splash>
+        <h1>Franklin Str<span>eats</span></h1>
+        <h2>Explore the culinary diversity of Chapel Hill</h2>
     </div>
     <div id = main>
         <h3>Search Restaurants and Bars in Chapel Hill</h3>
@@ -37,7 +37,7 @@
               <option value=5>5</option>  
           </select>
           <h4>Location</h4>
-          <select name="Location"class = "dropdown">
+          <select name="Rating"class = "dropdown">
               <option value=0>Any Location</option>
               <option value=1>East Franklin Street</option>
               <option value=2>West Franklin Street</option>
