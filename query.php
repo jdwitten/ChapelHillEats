@@ -82,15 +82,15 @@ else{
     if($prev){$ratingEval = "and rating =".$_POST["Rating"];}
     else{$ratingEval = "rating =".$_POST["Rating"];}
 }
-echo $typeEval . $priceEval . $locationEval . $ratingEval;
+
 $sql = "select rname from acsm_2fd6830ca4dfb48.restaraunts where ".$typeEval . $locationEval . $priceEval . $ratingEval;
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
-    echo "<table><tr><th>Name</th><th>Phone Number</th></tr>";
+    echo "<table><tr><th>Name</th><th>Phone Number</th><th>Address</th><th>Rating</th></tr>";
     // output data of each row
     while($row = $result->fetch_assoc()) {
-        echo "<tr><td>".$row["rname"]."</td><td>".$row["phone"]."</tr>";
+        echo "<tr><td>".$row["rname"]."</td><td>".$row["phone"]."</td><td>".$row["address"]."</td><td>".$row["rating"]."</td></tr>";
     }
     echo "</table>";
 } else {
