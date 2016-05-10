@@ -61,29 +61,26 @@ $conn = new mysqli($host, $user, $pwd, $db);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
-if($_POST["Type"]==0){
-    $typeEval = "";
-}
+
+$prev = false;
+if($_POST["Type"]==0){ $typeEval = "";}
+else{$typeEval = "rtype =".$_POST["Type"];$prev = true;}
+
+if($_POST["Location"]==0){$locationEval = "";}
 else{
-    $typeEval = " and rtype =".$_POST["Type"];
+    if($prev){$locationEval = " and location =".$_POST["Location"];}
+    else{ $locationEval = "location =".$_POST["Location"]; $prev = true;}
 }
-if($_POST["Location"]==0){
-    $locationEval = "";
-}
+if($_POST["Price"]==0){$priceEval = "";}
 else{
-    $locationEval = " and location =".$_POST["Location"];
+    if($prev){$priceEval = "and price =".$_POST["Price"];}
+    else{ $priceEval = "price =".$_POST["Price"]; $prev = true;}
 }
-if($_POST["Price"]==0){
-    $priceEval = "";
-}
+
+if($_POST["Rating"]==0){$ratingEval = "";}
 else{
-    $priceEval = "and price =".$_POST["Price"];
-}
-if($_POST["Rating"]==0){
-    $ratingEval = "";
-}
-else{
-    $ratingEval = "and rating =".$_POST["Rating"];
+    if($prev){$ratingEval = "and rating =".$_POST["Rating"];}
+    else{$ratingEval = "rating =".$_POST["Rating"];}
 }
 echo $typeEval . $priceEval . $locationEval . $ratingEval;
 $sql = "select rname from acsm_2fd6830ca4dfb48.restaraunts where ".$typeEval . $locationEval . $priceEval . $ratingEval;
