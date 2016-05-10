@@ -4,7 +4,7 @@
 </head>
 <body>
     <div id = splash>
-        <h1>Chapel Hill Eats</h1>
+        <h1>Franklin Str<h1 id = "colored">eat</h1></h1>
         <h2>Explore the culinary diversity of Franklin Street</h2>
     </div>
     <div id = main>
