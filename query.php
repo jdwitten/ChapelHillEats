@@ -83,7 +83,7 @@ else{
     else{$ratingEval = "rating =".$_POST["Rating"];}
 }
 
-$sql = "select rname,phone,address,rating from acsm_2fd6830ca4dfb48.restaraunts where ".$typeEval . $locationEval . $priceEval . $ratingEval;
+$sql = "select * from acsm_2fd6830ca4dfb48.restaraunts where ".$typeEval . $locationEval . $priceEval . $ratingEval;
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
