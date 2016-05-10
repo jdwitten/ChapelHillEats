@@ -61,25 +61,25 @@ $conn = new mysqli($host, $user, $pwd, $db);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
-if(strcmp($_POST["Type"],"Any Type")==0){
+if($_POST["Type"]==0){
     $typeEval = "";
 }
 else{
     $typeEval = " and rtype =".$_POST["Type"];
 }
-if(strcmp($_POST["Location"],"Any Location")==0){
+if($_POST["Location"]==0){
     $locationEval = "";
 }
 else{
     $locationEval = " and location =".$_POST["Location"];
 }
-if(strcmp($_POST["Price"],"Any Price")==0){
+if($_POST["Price"]==0){
     $priceEval = "";
 }
 else{
     $priceEval = "and price =".$_POST["Price"];
 }
-if(strcmp($_POST["Rating"],"Any Rating")==0){
+if($_POST["Rating"]==0){
     $ratingEval = "";
 }
 else{
