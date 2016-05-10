@@ -90,7 +90,7 @@ if ($result->num_rows > 0) {
     echo "<table><tr><th>Name</th><th>Phone Number</th><th>Address</th><th>Rating</th></tr>";
     // output data of each row
     while($row = $result->fetch_assoc()) {
-        echo "<tr><td>".$row["rname"]."</td><td>".$row["phone"]."</td><td>".$row["address"]."</td><td>".$row["rating"]."</td></tr>";
+        echo "<tr><td>".$row['rname']."</td><td>".$row['phone']."</td><td>".$row['address']."</td><td>".$row['rating']."</td></tr>";
     }
     echo "</table>";
 } else {
