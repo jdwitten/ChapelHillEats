@@ -4,7 +4,7 @@
 </head>
 <body>
     <div id = splash>
-        <h1>Franklin Str<h6>eat</h6></h1>
+        <h1>Franklin Str<span>eat</span></h1>
         <h2>Explore the culinary diversity of Franklin Street</h2>
     </div>
     <div id = main>
