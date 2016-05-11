@@ -86,7 +86,7 @@ else{
 $sql = "select rname,phone,address,rating from acsm_2fd6830ca4dfb48.restaraunts where ".$typeEval . $locationEval . $priceEval . $ratingEval;
 $result = $conn->query($sql);
 function buildRestaurant($rname, $phone, $address, $rating){
-       echo "<div class = 'restaurant'>".$rname.$phone.$address.$rating."</div>";
+       echo "<div class = 'restaurant'><div class = 'name>".$rname."</div><div class = 'rating'>".$rating."</div><div class = 'info'>".$phone.$address."</div>";
 }
 if ($result->num_rows > 0) {
     //echo "<table id = 'queryResults'><tr><th>Name</th><th>Phone Number</th><th>Address</th><th>Rating</th></tr>";
