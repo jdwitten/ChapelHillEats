@@ -81,6 +81,7 @@ h4{
   text-align:center;
   white-space:nowrap;
   overflow:hidden;
+  border: 1px solid;
 }
 
 #queryResults {
