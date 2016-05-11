@@ -85,8 +85,8 @@ h4{
    border: 1px solid black;
 }
 .restaurant{
-  width = 400px;
-  height = 300px;
+  width:80%;
+  height:300px;
   text-align:center;
   margin-top:15px;
   margin-bottom:15px;
