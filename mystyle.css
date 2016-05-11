@@ -2,7 +2,7 @@
 html, body{
   padding:0px;
   margin: 0px;
-  overflow:scroll;
+  overflow:hidden;
 }
 .dropdown {
     overflow:hidden;
@@ -48,6 +48,7 @@ select {
   height:500px;
   width:100%;
   white-space:nowrap;
+  overflow:scroll;
 }
 
 form{
