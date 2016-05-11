@@ -82,6 +82,8 @@ h4{
 
 #search{
   text-align:center;
+  overflow:scroll;
+  white-space:nowrap;
 }
 
 #queryResults {
