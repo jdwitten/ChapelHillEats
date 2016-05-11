@@ -81,7 +81,7 @@ h4{
   text-align:center;
 }
 
-table, th, td {
+main > table, th, td {
    border: 1px solid black;
 }
 
