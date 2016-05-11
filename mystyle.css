@@ -48,6 +48,7 @@ select {
   height:500px;
   width:100%;
   white-space:nowrap;
+  overflow:scroll;
 }
 
 form{
