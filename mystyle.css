@@ -38,7 +38,7 @@ select {
 }
 
 #splash {
-  position: relative;
+  position: fixed;
   z-index: -1;
   margin-left: auto;
   margin-right: auto;
