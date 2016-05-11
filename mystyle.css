@@ -101,6 +101,27 @@ h4{
   margin-left:auto;
   margin-right:auto;
 }
+.rname{
+  font-size:25px;
+  font-weight:bold;
+  text-align:center;
+  margin-top:5px;
+  margin-bottom:5px;
+}
 
+.rating{
+  font-size:25px;
+  font-weight:bold;
+  text-align:center;
+  margin-top:5px;
+  margin-bottom:5px;
+}
+
+.info{
+  font-size:15px;
+  text-align:center;
+  margin-top:5px;
+  margin-bottom:5px;
+}
 
 
