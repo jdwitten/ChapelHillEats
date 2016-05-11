@@ -81,7 +81,7 @@ h4{
   text-align:center;
 }
 
-#main > table, th, td {
+table.queryResults {
    border: 1px solid black;
 }
 
