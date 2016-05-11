@@ -81,7 +81,7 @@ h4{
   text-align:center;
 }
 
-.queryResults {
+#queryResults {
    border: 1px solid black;
 }
 
