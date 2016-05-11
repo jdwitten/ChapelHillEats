@@ -89,7 +89,7 @@ function buildRestaurant($rname, $phone, $address, $rating){
        echo "<div class = 'restaurant'>".$rname.$phone.$address.$rating."</div>";
 }
 if ($result->num_rows > 0) {
-    echo "<table id = 'queryResults'><tr><th>Name</th><th>Phone Number</th><th>Address</th><th>Rating</th></tr>";
+    //echo "<table id = 'queryResults'><tr><th>Name</th><th>Phone Number</th><th>Address</th><th>Rating</th></tr>";
     // output data of each row
     while($row = $result->fetch_assoc()){ 
        /* echo "<tr><td>".$row['rname']."</td>";
