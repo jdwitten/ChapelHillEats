@@ -80,7 +80,7 @@ else{
 if($_POST["Rating"]==0){$ratingEval = "";}
 else{
     if($prev){$ratingEval = "and rating =".$_POST["Rating"];}
-    else{$ratingEval = "rating =".$_POST["Rating"];}
+    else{$ratingEval = "rating =".$_POST["Rating"];$prev = true;}
 }
 if($prev){$sql = "select rname,phone,address,rating from acsm_2fd6830ca4dfb48.restaraunts where ".$typeEval . $locationEval . $priceEval . $ratingEval;}
 else{$sql = "select rname,phone,address,rating from acsm_2fd6830ca4dfb48.restaraunts";}
