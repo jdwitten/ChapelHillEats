@@ -87,7 +87,7 @@ $sql = "select rname,phone,address,rating from acsm_2fd6830ca4dfb48.restaraunts 
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
-    echo "<table class = 'queryResults'><tr><th>Name</th><th>Phone Number</th><th>Address</th><th>Rating</th></tr>";
+    echo "<table id = 'queryResults'><tr><th>Name</th><th>Phone Number</th><th>Address</th><th>Rating</th></tr>";
     // output data of each row
     while($row = $result->fetch_assoc()){ 
         echo "<tr><td>".$row['rname']."</td>";
