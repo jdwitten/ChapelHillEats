@@ -83,7 +83,7 @@ else{
     else{$ratingEval = "rating =".$_POST["Rating"];}
 }
 if($prev){$sql = "select rname,phone,address,rating from acsm_2fd6830ca4dfb48.restaraunts where ".$typeEval . $locationEval . $priceEval . $ratingEval;}
-else{$sql = "select rname,phone,address,rating from acsm_2fd6830ca4dfb48.restaraunts";
+else{$sql = "select rname,phone,address,rating from acsm_2fd6830ca4dfb48.restaraunts";}
 
 $result = $conn->query($sql);
 function buildRestaurant($rname, $phone, $address, $rating){
