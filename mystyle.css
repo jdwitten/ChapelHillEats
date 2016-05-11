@@ -82,11 +82,12 @@ h4{
 }
 
 td{
-  width = 150px;
+  height:50px;
   text-align:center;
   color:#99BADD;
 }
 table{
+  width:100%;
   text-align:center;
 }
 
