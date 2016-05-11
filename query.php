@@ -37,7 +37,7 @@
               <option value=5>5</option>  
           </select>
           <h4>Location</h4>
-          <select name="Rating"class = "dropdown">
+          <select name="Location"class = "dropdown">
               <option value=0>Any Location</option>
               <option value=1>East Franklin Street</option>
               <option value=2>West Franklin Street</option>
