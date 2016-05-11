@@ -84,7 +84,7 @@ else{
 }
 if($prev){$sql = "select rname,phone,address,rating from acsm_2fd6830ca4dfb48.restaraunts where ".$typeEval . $locationEval . $priceEval . $ratingEval;}
 else{$sql = "select rname,phone,address,rating from acsm_2fd6830ca4dfb48.restaraunts";}
-
+echo $sql;
 $result = $conn->query($sql);
 function buildRestaurant($rname, $phone, $address, $rating){
        echo "<div class = 'restaurant'><div class = 'name'>".$rname."</div><div class = 'rating'>".$rating."</div><div class = 'info'>Phone Number: ".$phone."</div><div class = 'info'>Address: ".$address."</div></div>";
