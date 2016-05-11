@@ -47,8 +47,6 @@ select {
   background-size:cover;
   height:500px;
   width:100%;
-  white-space:nowrap;
-  overflow:scroll;
 }
 
 form{
@@ -84,8 +82,6 @@ h4{
 
 #search{
   text-align:center;
-  white-space:nowrap;
-  overflow:scroll;
 }
 
 #queryResults {
