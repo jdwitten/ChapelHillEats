@@ -2,6 +2,7 @@
 html, body{
   padding:0px;
   margin: 0px;
+  overflow:scroll;
 }
 .dropdown {
     overflow:hidden;
@@ -80,8 +81,6 @@ h4{
 #search{
   text-align:center;
   white-space:nowrap;
-  overflow:hidden;
-  border: 1px solid black;
 }
 
 #queryResults {
