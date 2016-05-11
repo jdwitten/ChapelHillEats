@@ -84,6 +84,10 @@ h4{
 #queryResults {
    border: 1px solid black;
 }
+.restaurant{
+  width = 100%;
+  height = 100px;
+}
 
 
 
