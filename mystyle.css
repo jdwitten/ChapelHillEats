@@ -46,6 +46,7 @@ select {
   background-image:url(https://farm8.staticflickr.com/7144/26311556194_e6f088e312_c.jpg);
   background-size:cover;
   height:500px;
+  width:100%;
 }
 
 form{
