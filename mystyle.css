@@ -86,11 +86,13 @@ h4{
 }
 .restaurant{
   width:80%;
-  height:300px;
+  height:150px;
   text-align:center;
   margin-top:15px;
   margin-bottom:15px;
   border-top:1px solid black;
+  margin-left:auto;
+  margin-right:auto;
 }
 
 
