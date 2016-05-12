@@ -132,3 +132,9 @@ h4{
 .restaurant:hover{
   background-color:#99BADD;
 }
+#footer{
+  height:150px;
+  width:100%;
+  margin-top:15px;
+  background-color:black;
+}
