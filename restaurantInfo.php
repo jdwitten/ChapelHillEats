@@ -23,7 +23,7 @@ if ($conn->connect_error) {
 $sql = "select rid,rname,phone,address,rating,photoURL from acsm_2fd6830ca4dfb48.restaraunts where rid = ".$rid;
 $result = $conn->query($sql);
 
-$row = $result->fetch_assoc()){ 
+$row = $result->fetch_assoc();
 
 echo "<img src =" .$row['photoURL']."></img>";
 ?>
