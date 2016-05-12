@@ -3,6 +3,8 @@
   <link rel="stylesheet" type="text/css" href="infoStyle.css">
 </head>
 <body>
+<div id = "header"></div>  
+  
 <?php
 $rid = $_GET['rname'];
 echo $rname;
