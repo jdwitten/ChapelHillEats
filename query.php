@@ -86,7 +86,7 @@ if($prev){$sql = "select rid,rname,phone,address,rating from acsm_2fd6830ca4dfb4
 else{$sql = "select rid,rname,phone,address,rating from acsm_2fd6830ca4dfb48.restaraunts";}
 $result = $conn->query($sql);
 function buildRestaurant($rname, $phone, $address, $rating,$rid){
-       echo "<a href = 'restaurantInfo.php?rname=".$rid."><div class = 'restaurant' ><span><div class = 'name'>".$rname."</div><div class = 'rating'>Rating: ".$rating."</div><div class = 'info'>Phone Number: ".$phone."</div><div class = 'info'>Address: ".$address."</div></span></div></a>";
+       echo "<a href = restaurantInfo.php?rname=".$rid."><div class = 'restaurant' ><span><div class = 'name'>".$rname."</div><div class = 'rating'>Rating: ".$rating."</div><div class = 'info'>Phone Number: ".$phone."</div><div class = 'info'>Address: ".$address."</div></span></div></a>";
 }
 if ($result->num_rows > 0) {
     //echo "<table id = 'queryResults'><tr><th>Name</th><th>Phone Number</th><th>Address</th><th>Rating</th></tr>";
