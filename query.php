@@ -87,7 +87,7 @@ else{$sql = "select rname,phone,address,rating from acsm_2fd6830ca4dfb48.restara
 echo $sql;
 $result = $conn->query($sql);
 function buildRestaurant($rname, $phone, $address, $rating){
-       echo "<div class = 'restaurant'><span><div class = 'name'>".$rname."</div><div class = 'rating'>".$rating."</div><div class = 'info'>Phone Number: ".$phone."</div><div class = 'info'>Address: ".$address."</div></span></div>";
+       echo "<div class = 'restaurant'><span><div class = 'name'>".$rname."</div><div class = 'rating'>Rating: ".$rating."</div><div class = 'info'>Phone Number: ".$phone."</div><div class = 'info'>Address: ".$address."</div></span></div>";
 }
 if ($result->num_rows > 0) {
     //echo "<table id = 'queryResults'><tr><th>Name</th><th>Phone Number</th><th>Address</th><th>Rating</th></tr>";
