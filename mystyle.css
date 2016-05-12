@@ -125,5 +125,8 @@ h4{
   margin-top:5px;
   margin-bottom:5px;
 }
-
+.restaurant>span{
+  text-align:center;
+  font-family: 'Open Sans', sans-serif; 
+}
 
