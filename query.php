@@ -86,7 +86,7 @@ if($prev){$sql = "select rname,phone,address,rating from acsm_2fd6830ca4dfb48.re
 else{$sql = "select rname,phone,address,rating from acsm_2fd6830ca4dfb48.restaraunts";}
 $result = $conn->query($sql);
 function buildRestaurant($rname, $phone, $address, $rating){
-       echo "<a href = 'chapelhilleats.azurewebsites.net/restaurantInfo.php?rname='".$rname."><div class = 'restaurant' ><span><div class = 'name'>".$rname."</div><div class = 'rating'>Rating: ".$rating."</div><div class = 'info'>Phone Number: ".$phone."</div><div class = 'info'>Address: ".$address."</div></span></div></a>";
+       echo "<a href = url(chapelhilleats.azurewebsites.net/restaurantInfo.php?rname=)".$rname."><div class = 'restaurant' ><span><div class = 'name'>".$rname."</div><div class = 'rating'>Rating: ".$rating."</div><div class = 'info'>Phone Number: ".$phone."</div><div class = 'info'>Address: ".$address."</div></span></div></a>";
 }
 if ($result->num_rows > 0) {
     //echo "<table id = 'queryResults'><tr><th>Name</th><th>Phone Number</th><th>Address</th><th>Rating</th></tr>";
