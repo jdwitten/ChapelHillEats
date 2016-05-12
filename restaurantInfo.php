@@ -28,6 +28,11 @@ $result = $conn->query($sql);
 $row = $result->fetch_assoc();
 
 echo "<img src =" .$row['photoURL']."></img>";
+echo "<h4>".$row['rname']."</h4>";
+
+
+
+
 ?>
 
 </body>
