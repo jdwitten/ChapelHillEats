@@ -129,3 +129,6 @@ h4{
   font-family: 'Open Sans', sans-serif; 
 }
 
+.restaurant:hover{
+  background-color:#99BADD;
+}
