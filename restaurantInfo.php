@@ -29,7 +29,7 @@ $row = $result->fetch_assoc();
 
 echo "<img src =" .$row['photoURL']."></img>";
 echo "<h4>".$row['rname']."</h4>";
-echo "<h1>Address: ".$row['address']."Phone Number: ". $row['phone']."</h1>";
+echo "<h1>Address: ".$row['address']."  ". $row['phone']."</h1>";
 echo "<h3>Rating: ".$row['rating']."</h3>";
 
 
