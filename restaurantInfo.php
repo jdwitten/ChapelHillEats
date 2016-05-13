@@ -32,6 +32,11 @@ echo "<h4>".$row['rname']."</h4>";
 echo "<h1>".$row['address']."  ". $row['phone']."</h1>";
 echo "<h3>Rating: ".$row['rating']."</h3>";
 
+$fetchComments = "select date, comment from acsm_2fd6830ca4dfb48.comments where rid = ".$rid;
+
+$comments = $conn->query($fetchComments);
+
+while
 
 
 ?>
