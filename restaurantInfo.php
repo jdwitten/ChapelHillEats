@@ -31,14 +31,24 @@ echo "<img src =" .$row['photoURL']."></img>";
 echo "<h4>".$row['rname']."</h4>";
 echo "<h1>".$row['address']."  ". $row['phone']."</h1>";
 echo "<h3>Rating: ".$row['rating']."</h3>";
-
+echo "<textarea rows = '5' cols = '50'></textarea>"
 $fetchComments = "select date, comment from acsm_2fd6830ca4dfb48.comments where rid = ".$rid;
 
 $comments = $conn->query($fetchComments);
 
-while
-
-
+if ($comments->num_rows > 0) {
+    
+    // output comments of each row
+    while($row = $comments->fetch_assoc()){
+      buildComment($row['date'],$row['comment']);
+    }
+} else {
+    echo "0 results";
+}
+$conn->close();
+function buildComment($date, $comment){
+  echo "<div class = 'comment'>".$comment."</div>"
+}
 ?>
 
 </body>
