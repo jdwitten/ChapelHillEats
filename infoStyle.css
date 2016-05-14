@@ -66,6 +66,15 @@ h6{
   font-size: 20px;
   font-weight: 150;
 }
+h5{
+   margin-top:50px;
+  text-align:center;
+  font-size:15px;
+  #ffffff; font-family: 'Raleway',sans-serif;
+  font-size: 20px;
+  font-weight: 150;
+  display:inline-block;
+}
 #ratingSlider{
   display:block;
   width:40%;
