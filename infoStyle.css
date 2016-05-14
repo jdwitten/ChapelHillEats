@@ -87,3 +87,7 @@ h6{
   margin-right:auto;
   
 }
+
+#text-input{
+  display:inline-block;
+}
