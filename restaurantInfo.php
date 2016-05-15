@@ -40,7 +40,7 @@ echo "<div id = 'newRatingContainer'>";
 echo "<h6>Write a review for ".$row['rname']."</h6>";
 echo "<form action= 'restaurantInfoUpdate.php?rname=".$rid." ' method='post'>";
 echo "<h5>Rating:</h5><input type='range' name='inputRating' min='0' max='100' onchange='updateTextInput(this.value);'id = 'ratingSlider'><h6 id='textInput'>50</h6>";
-echo "<textarea id = 'newComment'></textarea><input type ='submit' value='Submit' id='submit'></form>";
+echo "<textarea id = 'newComment' name='comment'></textarea><input type ='submit' value='Submit' id='submit'></form>";
 echo "</div>";
 $fetchComments = "select date, comment from acsm_2fd6830ca4dfb48.comments where rid = ".$rid;
 
