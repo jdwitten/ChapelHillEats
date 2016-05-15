@@ -26,7 +26,7 @@ if ($conn->connect_error) {
 }
 
 $date = getdate();
-$addComment = "Insert into acsm_2fd6830ca4dfb48.comments (rid, comment, date,rating) values(".$rid.",".$_GET['comment'].",".$date['year']."-".$date['month']."-".$date['mday'].",".$_GET['rating'].")";
+$addComment = "Insert into acsm_2fd6830ca4dfb48.comments (rid, comment, date,rating) values(".$rid.",".$_GET['comment'].",".$date['year']."-".$date['mon']."-".$date['mday'].",".$_GET['inputRating'].")";
 echo $addComment;
 $conn->query($addComment);
 
