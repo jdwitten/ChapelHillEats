@@ -25,7 +25,9 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-
+$date = getdate();
+$addComment = "Insert into acsm_2fd6830ca4dfb48.comments (rid, comment, date,rating) values(".$rid.",".$_GET['comment'].",".$date['year']."-".$date['month']."-".$date['mday'].",".$_GET['rating'].")";
+$conn->query($addComment);
 
 $sql = "select rid,rname,phone,address,rating,photoURL from acsm_2fd6830ca4dfb48.restaraunts where rid = ".$rid;
 $result = $conn->query($sql);
