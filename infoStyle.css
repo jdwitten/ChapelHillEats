@@ -67,6 +67,7 @@ h6{
   padding-top:5px;
   margin-top:0px;
   margin-bottom:0px;
+  color:white;
 }
 h5{
    margin-top:0px;
@@ -77,6 +78,7 @@ h5{
   font-size: 20px;
   display:inline-block;
   font-weight:20;
+  color:white;
 }
 #ratingSlider{
   display:block;
@@ -92,8 +94,8 @@ h5{
   height:500px;
   background-image:url(https://farm8.staticflickr.com/7144/26311556194_e6f088e312_c.jpg);
   text-align:center;
-  padding-top:15px;
-  margin-top:30px;
+  padding-top:40px;
+  margin-top:70px;
   background-position:cover;
   background-repeat:none;
   
