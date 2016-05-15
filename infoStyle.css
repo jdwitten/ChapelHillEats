@@ -90,11 +90,12 @@ h5{
 #newRatingContainer{
   width:100%;
   height:500px;
-  background-image:url(http://proctorfree.com/wp-content/uploads/2013/10/UNC-Chapel-Hill.jpg);
+  background-image:url(https://farm8.staticflickr.com/7144/26311556194_e6f088e312_c.jpg);
   text-align:center;
   padding-top:15px;
   margin-top:30px;
-  background-position:contain;
+  background-position:cover;
+  background-repeat:none;
   
 }
 #submit{
