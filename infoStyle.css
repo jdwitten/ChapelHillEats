@@ -73,7 +73,7 @@ h5{
   font-size:15px;
   #ffffff; font-family: 'Raleway',sans-serif;
   font-size: 20px;
-  font-weight: 150;
+  font-weight: 25;
   display:inline-block;
 }
 #ratingSlider{
@@ -91,7 +91,7 @@ h5{
   background-color:#99BADD;
   text-align:center;
   padding-top:15px;
-  margin-top:15px;
+  margin-top:30px;
   
 }
 #submit{
