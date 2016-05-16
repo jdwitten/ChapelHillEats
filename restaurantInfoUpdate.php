@@ -39,8 +39,11 @@ $numOfRatings = "SELECT COUNT(rid) from acsm_2fd6830ca4dfb48.comments where rid=
 
 $quantity = $conn->query($numOfRatings);
 $total = $conn->query($updateRating);
-
-$newRating = $total/$quantity;
+$row1 = $quantity->fetch_assoc();
+$row2 = $total->fetch_assoc();
+echo "Quantity = ". $row1[0];
+echo "Total = ". $row2[0];
+$newRating = $row1[0]/$row2[0];
 echo "New Rating: ". $newRating;
 $update = "UPDATE acsm_2fd6830ca4dfb48.restaurants SET rating =".$newRating." where rid=".$rid;
 
