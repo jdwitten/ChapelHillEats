@@ -35,7 +35,7 @@ if ($conn->query($addComment) === TRUE) {
 }
 
 $updateRating = "SELECT SUM(rating) from acsm_2fd6830ca4dfb48.comments where rid=".$rid;
-$numOfRatings = "SELECT COUNT(rid) from acsm_2fd6830ca4dfb48.comments where rid=".$rid;"
+$numOfRatings = "SELECT COUNT(rid) from acsm_2fd6830ca4dfb48.comments where rid=".$rid;
 
 $quantity = $conn->query($numOfRatings);
 $total = $conn->query($updateRating);
