@@ -46,7 +46,7 @@ echo "Total = ". $row2[0];
 $newRating = $row2[0]/$row1[0];
 $newRating = floor($newRating);
 echo "New Rating: ". $newRating;
-$update = "UPDATE acsm_2fd6830ca4dfb48.restaurants SET rating =".$newRating." where rid=".$rid;
+$update = "UPDATE acsm_2fd6830ca4dfb48.restaraunts SET rating =".$newRating." where rid=".$rid;
 
 
 $sql = "select rid,rname,phone,address,rating,photoURL from acsm_2fd6830ca4dfb48.restaraunts where rid = ".$rid;
