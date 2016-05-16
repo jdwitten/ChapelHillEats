@@ -34,6 +34,17 @@ if ($conn->query($addComment) === TRUE) {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }
 
+$updateRating = "SELECT SUM(rating) from acsm_2fd6830ca4dfb48.comments where rid=".$rid;
+$numOfRatings = "SELECT COUNT(rid) from acsm_2fd6830ca4dfb48.comments where rid=".$rid;"
+
+$quantity = $conn->query($numOfRatings);
+$total = $conn->query($updateRating);
+
+$newRating = $total/$quantity;
+
+$update = "UPDATE acsm_2fd6830ca4dfb48.restaurants SET rating =".$newRating." where rid=".$rid;
+
+
 $sql = "select rid,rname,phone,address,rating,photoURL from acsm_2fd6830ca4dfb48.restaraunts where rid = ".$rid;
 $result = $conn->query($sql);
 
