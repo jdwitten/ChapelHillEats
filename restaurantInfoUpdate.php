@@ -39,8 +39,8 @@ $numOfRatings = "SELECT COUNT(rid) from acsm_2fd6830ca4dfb48.comments where rid=
 
 $quantity = $conn->query($numOfRatings);
 $total = $conn->query($updateRating);
-$row1 = $quantity->fetch_assoc();
-$row2 = $total->fetch_assoc();
+$row1 = $quantity->fetch_row();
+$row2 = $total->fetch_row();
 echo "Quantity = ". $row1[0];
 echo "Total = ". $row2[0];
 $newRating = $row1[0]/$row2[0];
