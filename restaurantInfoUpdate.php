@@ -41,7 +41,7 @@ $quantity = $conn->query($numOfRatings);
 $total = $conn->query($updateRating);
 
 $newRating = $total/$quantity;
-
+echo "New Rating: ". $newRating;
 $update = "UPDATE acsm_2fd6830ca4dfb48.restaurants SET rating =".$newRating." where rid=".$rid;
 
 
