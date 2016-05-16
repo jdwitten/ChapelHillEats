@@ -48,6 +48,7 @@ $newRating = floor($newRating);
 echo "New Rating: ". $newRating;
 $update = "UPDATE acsm_2fd6830ca4dfb48.restaraunts SET rating =".$newRating." where rid=".$rid;
 
+$conn->query($update);
 
 $sql = "select rid,rname,phone,address,rating,photoURL from acsm_2fd6830ca4dfb48.restaraunts where rid = ".$rid;
 $result = $conn->query($sql);
