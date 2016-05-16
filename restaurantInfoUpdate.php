@@ -80,7 +80,9 @@ if ($comments->num_rows > 0) {
 }
 $conn->close();
 function buildComment($date, $comment){
-  echo "<div class = 'comment'>".$comment."</div>";
+  echo "<div class = 'comment'>";
+  echo "<h6 class = 'commDate'>Comment written on ".$date.": </h6>";
+  echo  "<h6 class='comm'>". $comment."</h6></div>";
 }
 ?>
 
