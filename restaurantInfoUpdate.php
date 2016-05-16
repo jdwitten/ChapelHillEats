@@ -43,7 +43,8 @@ $row1 = $quantity->fetch_row();
 $row2 = $total->fetch_row();
 echo "Quantity = ". $row1[0];
 echo "Total = ". $row2[0];
-$newRating = $row1[0]/$row2[0];
+$newRating = $row2[0]/$row1[0];
+$newRating = floor($newRating);
 echo "New Rating: ". $newRating;
 $update = "UPDATE acsm_2fd6830ca4dfb48.restaurants SET rating =".$newRating." where rid=".$rid;
 
