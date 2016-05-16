@@ -26,7 +26,7 @@ if ($conn->connect_error) {
 }
 
 $date = getdate();
-$addComment = "INSERT INTO acsm_2fd6830ca4dfb48.comments (rid, comment, date,rating) VALUES(".$rid.",".$_POST['comment'].",".$date['year']."-".$date['mon']."-".$date['mday'].",".$_POST['inputRating'].")";
+$addComment = "INSERT INTO acsm_2fd6830ca4dfb48.comments (rid, comment, date,rating) VALUES(".$rid.", ' ".$_POST['comment']." ' ,".$date['year']."-".$date['mon']."-".$date['mday'].",".$_POST['inputRating'].")";
 echo $addComment;
 if ($conn->query($addComment) === TRUE) {
     echo "New record created successfully";
